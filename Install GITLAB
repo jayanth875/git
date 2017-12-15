@@ -1,0 +1,8 @@
+Pre-reqs -- Minimum of 4 GB free memory needed
+Install dependencies -- Policycoreutils, openssh-server, cronie, http, postfix
+Add the GitLab package repository
+        curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.rpm.sh | sudo bash
+Install the Gitlab package
+        sudo EXTERNAL_URL="http://gitlab.example.com" yum -y install gitlab-ee
+Note: Change 'http://gitlab.example.com' to the URL at which you want to access your GitLab instance
+
