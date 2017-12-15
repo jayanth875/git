@@ -1,8 +1,14 @@
-Pre-reqs -- Minimum of 4 GB free memory needed
+Pre-reqs -- Minimum of 4 GB free memory needed for 100 users, 
+            2 Cores for 500 users, 
+            4 cores for 2000 users,
+            16 cores to support 10000 users,
+            5-10 GB of space on server for Database (PostgreSQL recommended)
 Install dependencies -- Policycoreutils, openssh-server, cronie, http, postfix
 Add the GitLab package repository
         curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.rpm.sh | sudo bash
 Install the Gitlab package
         sudo EXTERNAL_URL="http://gitlab.example.com" yum -y install gitlab-ee
 Note: Change 'http://gitlab.example.com' to the URL at which you want to access your GitLab instance
+Browse hostname and login
+        You will be redirected to a password reset screen. Use default account's username "root" to login
 
